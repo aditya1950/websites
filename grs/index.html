@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Celebrating Publications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css\qoute.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ 
+  <script src="js\canvasjs.min.js"></script>
+  
+  
+  
+  <script type="text/javascript">
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer", {
+				title: {
+					text: "Citation Timeline"
+				},
+				data: [{
+					type: "column",
+					dataPoints: [
+						{ y: 6, label: "2009" },
+						{ y: 6, label: "2010" },
+						{ y: 8, label: "2011" },
+						{ y: 2, label: "2012" },
+						{ y: 5, label: "2013" },
+						{ y: 4, label: "2014" },
+						{ y: 3, label: "2015" },
+						{ y: 2, label: "2016" },
+						]
+				}]
+			});
+			chart.render();
+		}
+	</script>
+	
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1300px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	
+	
+	#top,#middle,#bottom,#abstract{
+    
+}
+  .sidenav1 {      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+}
+.sidenav1 {        height: auto;
+        padding: 15px;
+}
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+  	</div>
+  </div>
+  
+	  <center>
+	  <h1 style="color:white;">Baseball Momentum</h1>
+    </center>
+</nav>
+   
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    <img class="img-responsive" src="ball.jpg" alt="Baseball" width="410" height="300">
+      
+      
+    
+				
+		<div class="well">
+			<p>Baseball Stats</p>
+            <p><a href="http://www.baseball-reference.com/">Baseball Reference 1</a></p>
+            <br>
+            <p><a href="http://www.baseball-reference.com/postseason/">Baseball Reference 2</a></p>
+			
+    
+		</div>
+	</div>
+    <div class="col-sm-8 text-center">
+	
+
+	
+<h1>Welcome</h1>
+      <p>This is a Graduate Research Seminar Project 2: 
+<br> Under the guidance of Prof. Ronald Loui.</p>
+	  <hr>
+	  <h2>Is there a momentum effect for baseball teams going into the playoffs?</h2>
+       <hr>
+        <p>
+            The aim of this assignment is to calculate the momentum of the team, i.e. Predict if the team will perform well in the next season by evaluating the performance of the teams in the selected season.
+            To proceed with the calculations we first selected year <b>1998</b> for which we will evaluate the performance of each pairings for all the series. Here we populated 3 data series in the graph which were for the following:<br>
+        <b>For September month<br>
+            For the overall season<br>
+            For the half season<br></b>
+        
+To calculate the data point of the above series we calculated 'x' by subtracting 'how hot the loosing team performed' by 'how hot the winning team performed'. However for the 'y' values the points by which the winning team won the series were considered. This was done for all the values of the above mentioned data series. The graph that was plotted was a scattered graph which then used to calculate the momentum of team for the next season.
+
+        </p>
+        <hr>
+       
+<div id="myDiv" style="width: 880px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    <!-- JAVASCRIPT CODE GOES HERE -->
+        var trace1 = {
+  x: [0.094, -0.007, 0.107, -0.25, 0.055,-0.292,0.218],
+  y: [0.75, 1, 1, 0.75,0.66,0.66,1],
+  mode: 'markers+text',
+  type: 'scatter',
+  name: 'Month',
+  text: ['CLE-BOS', 'NYY-TEX', 'ATL-CHC', 'SDP-HOU', 'NYY-CLE','SDP-ATL','NYY-SDP'],
+  textposition: 'top center',
+  textfont: {
+    family: 'Raleway, sans-serif'
+  },
+  marker: {
+    size: 12
+  }
+};
+
+var trace2 = {
+  x: [-0.019, 0.161, 0.102, -0.025, 0.155,-0.049,0.099],
+  y: [0.75, 1, 1, 0.75,0.66,0.66,1],
+  mode: 'markers+text',
+  type: 'scatter',
+  name: 'Overall',
+  text: ['CLE-BOS', 'NYY-TEX', 'ATL-CHC', 'SDP-HOU', 'NYY-CLE','SDP-ATL','NYY-SDP'],
+  textfont: {
+    family: 'Times New Roman'
+  },
+  textposition: 'bottom center',
+  marker: {
+    size: 12
+  }
+};
+      
+var trace3 = {
+  x: [-0.024,0.201,0.118,0.039,0.165,-0.022,0.105],
+   y: [0.75, 1, 1, 0.75,0.66,0.66,1],
+  mode: 'markers+text',
+  type: 'scatter',
+  name: 'Half Season',
+  text: ['CLE-BOS', 'NYY-TEX', 'ATL-CHC', 'SDP-HOU', 'NYY-CLE','SDP-ATL','NYY-SDP'],
+  textfont: {
+    family: 'Times New Roman'
+  },
+  textposition: 'bottom center',
+  marker: {
+    size: 12
+  }
+};
+
+var data = [trace1, trace2, trace3];
+
+var layout = {
+  xaxis: {
+    title: "x Axis",
+    titlefont: {
+      family: "Courier New, monospace",
+      size: 18,
+      color: "#7f7f7f"
+    } , 
+    range: [-0.500, 0.4]
+  },
+  yaxis: {
+      title: "y Axis",
+    titlefont: {
+      family: "Courier New, monospace",
+      size: 18,
+      color: "#7f7f7f"
+    } ,
+    range: [-0.200, 1.5]
+  },
+  legend: {
+    y: 0.5,
+    yref: 'paper',
+    font: {
+      family: 'Arial, sans-serif',
+      size: 20,
+      color: 'grey',
+    }
+  },
+  title: 'Momentum of Baseball teams : 1998'
+};
+
+Plotly.newPlot('myDiv', data, layout);
+  </script>
+	
+ <hr>
+        <p>In conlusion,according to calculations presented above we see that the team NYY and ATL have momentum to win in the next season i.e year 1999. Now we have the results for the next few years, so it shows that team NYY have kept the winning streak alive for next 2 consecutive years. Also team ATL reached the finals in 1999 against NYY, but unfortunately lost. In addition, NYY reached the finals in 2001. This result gives a brief idea that, yes it is possible that winning momentum makes the teams do better in the post season </p>
+        
+        <hr>
+        <h4 style="color:#337ab7">Download the graph data from here</h4>
+      
+        <form>
+            <button type="button" class="btn btn-warning" onClick="window.open('workbook.xlsx')">Download</button>
+            
+</form>
+        
+        <hr>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_p4N11NmW8E" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+	
+    
+	
+    
+	
+    <div class="col-sm-2 sidenav">
+    <img class="img-responsive" src="baseball.jpg" alt="Baseball" width="410" height="300">
+      
+      
+    </div>
+  </div>
+  </div>
+
+<footer class="container-fluid text-center">
+  <p>Ankita Kulkarni - akulk2 | Aditya Chimbalkar - achim2 | Ajith Kolla - akoll2</p> 
+  <p>University of Illinois at Springfield</p>
+</footer>
+
+</body>
+</html>
+

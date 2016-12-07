@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Celebrating Publications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css\qoute.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ 
+  <script src="js\canvasjs.min.js"></script>
+  
+  
+  
+  <script type="text/javascript">
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer", {
+				title: {
+					text: "Citation Timeline"
+				},
+				data: [{
+					type: "column",
+					dataPoints: [
+						{ y: 6, label: "2009" },
+						{ y: 6, label: "2010" },
+						{ y: 8, label: "2011" },
+						{ y: 2, label: "2012" },
+						{ y: 5, label: "2013" },
+						{ y: 4, label: "2014" },
+						{ y: 3, label: "2015" },
+						{ y: 2, label: "2016" },
+						]
+				}]
+			});
+			chart.render();
+		}
+	</script>
+	
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 4000px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	
+	
+	#top,#middle,#bottom,#abstract{
+    
+}
+  .sidenav1 {      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+}
+.sidenav1 {        height: auto;
+        padding: 15px;
+}
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+  	</div>
+  </div>
+  
+	  <center>
+	  <h1 style="color:white;">Celebrating Publications</h1>
+    </center>
+</nav>
+   
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+	<img class="img-responsive" src="rloui.jpg" alt="Ronald P. Loui" width="460" height="345">
+	<h3>Dr. Ronald P. Loui</h3>
+				
+		<div class="well">
+			<p>University of Illinois Springfield</p>
+			<p>Computing, Artificial Intelligence and Law, Philosophical Logic, Decision
+			<br>Verified email at uis.edu - <a href="https://uisacad5.uis.edu/~rloui2/homepage.html">Homepage</a></p>
+    
+		</div>
+	</div>
+    <div class="col-sm-8 text-left">
+	<center>
+	<h3><a href="#abstract">Abstract</a> ||
+<a href="#qoutations">Quotations</a> || 	
+<a href="#citedpapers">Cited Papers</a> ||
+<a href="#authors">Authors/Countries</a> ||
+<a href="#video">Video</a> ||
+<a href="#claims">Claims</a></h3></center>
+
+<hr>
+	
+	
+      <h1>Welcome</h1>
+      <p>This is a Graduate Research Seminar Project : Celebrating Publications.<br> Under the guidance of Prof. Ronald Loui.</p>
+	  <hr>
+	  <h2>In Praise of Scripting: Real Programming Pragmatism</h2>
+      <h4>Author : Ronald P. Loui</h4>
+      <p><b>Published in:</b> Computer ( Volume: 41, Issue: 7, July 2008 ) &nbsp;&nbsp; <b>Date of Current Version:</b> 15 July 2008</p>
+	  <p><b>DOI:</b> 10.1109/MC.2008.228&nbsp;&nbsp;  <b>Publisher:</b> IEEE  &nbsp;&nbsp; <b>Sponsored by:</b> IEEE Computer Society</p>
+	  <hr>
+	  <div id="abstract"><a href="abstract"></a>
+	  <center>
+	  <h2>ABSTRACT</h2>
+	  </center>
+	  <p>The academic <a href="https://en.wikipedia.org/wiki/Programming_language">programming language</a> community continues to 
+	  reject the change in programming practices brought about by <a href="https://en.wikipedia.org/wiki/Script">scripting</a>. We need a programming language <a href="https://en.wikipedia.org/wiki/Pragmatics">pragmatics</a> to go past the
+	  analysis of syntax and semantics in  the same way that linguistics studies perlocution and illocution. Pragmatic questions are not the easiest 
+	  for mathematically  inclined <a href="https://en.wikipedia.org/wiki/Computer_scientist">computer scientists</a> to address. They refer by nature to people and their habits, sociology, and the day's technological 
+	  demands. An industrial psychology literature, apart from computing, has sometimes addressed questions of this kind. But this kind 
+	  of study must become part of programming language theory within <a href="https://en.wikipedia.org/wiki/Computing">computing</a>. It's the importance of just these kinds of questions 
+	  that makes programmers choose scripting languages. The author recommends that scripting, not <a href="https://en.wikipedia.org/wiki/Java">Java</a>, be taught first,
+	  asserting that students should learn to love their own possibilities before they learn to loathe other people's restrictions.</p>
+    </div>
+	<hr>
+	
+		<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+	<hr>
+	<div id="qoutations"><a href="qoutations"></a>
+<center>
+
+	<h2>QUOTATIONS</h2>
+	
+	<div class="container"  style="height: 100px;  width: 530px;">
+			<blockquote><h3>If recording and replaying macros simulates a kind of autopilot, then scripting offers a kind of proxy for human desicion-making.</h3></blockquote>
+	</div>
+	
+</center>
+</div>
+ <br><br>
+	<hr>
+   
+    <div id="claims"><a href="claims"></a>
+	<center>
+	
+	<h2>MAJOR CLAIMS</h2>
+    <h4>The author recommends that
+scripting, not Java, be taught
+first, asserting that students
+should learn to love their
+own possibilities before they
+learn to loathe other people’s
+restrictions.</h4>
+<br>
+<h4>Author reported in
+1996 that only the scripting programmers could generate
+code fast enough to keep up with the
+demands of the artificial intelligence
+laboratory class.</h4><br>
+<h4>Even though students
+could choose any language they
+wanted, and many had to unlearn
+top-down ways of doing things,
+few could turn new ideas into code
+without scripting.</h4><br>
+<h4>Students who learn to script early
+are empowered throughout their college years, especially
+in the crucial Unix and Web environments. Those who
+learn Java and C++ first are stifled by enterprise-sized
+correctness.</h4><br>
+<h4>Early programmers must learn to be creative
+and inventive, and they need programming tools that
+support exploration rather than production. Software
+engineering aesthetics should come after programming,
+not the other way around.</h4>
+
+	</center>
+    </div>
+<br>
+	<hr>
+	 <div id="citedpapers"><a href="citedpapers"></a>
+	<center>
+	
+	<h2>TOP 10 CITIED PAPERS</h2>
+	</center>
+	
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         	1. David De Roure, "Towards Computational Abstractions over a RESTful Architecture", eScience 2008. eScience '08. IEEE Fourth International Conference on, pp. 719-722, 2008.
+        </a>
+      </h4>
+    </div>
+ <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+   	<p><b>AUTHORS:</b> David De Roure  (Univ. of Southampton, Southampton)<br>
+<b>Foreign Country:</b> UK-United Kingdom<br>
+<b>What they say about the paper:</b> These are ‘toy’ tutorial examples to illustrate the paradigm. The experimental implementation has been exercised successfully with basic use cases in chemistry and in music information retrieval, and we are considering the use of Restful language in teaching [7].<br>
+<b>Link:</b> <a href="http://ieeexplore.ieee.org/document/4736889/">http://ieeexplore.ieee.org/document/4736889/</a></p>
+
+	</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+         2.	Panos Kyriakakis and Alexander Chatzigeorgiou, "Maintenance Patterns of Large-Scale PHP Web Applications", Software Maintenance and Evolution (ICSME) 2014 IEEE International Conference on, pp. 381-390, 2014, ISSN 1063-6773.on, pp. 719-722, 2008.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <b>AUTHORS:</b> Panos Kyriakakis(Sch. of Sci. & Technol., Hellenic Open Univ., Patras, Greece), Alexander Chatzigeorgiou(Dept. of Appl. Inf., Univ. of Macedonia, Thessaloniki, Greece)(COUNT2)
+<br><b>Foreign Country:</b> GR-Greece <br>
+<b>What they say about the paper:</b> Various anecdotal sources in computer science claimed for long that despite the tremendous popularity of scripting languages [2], such as those employed in LAMP (LinuxApache-MySQL – Perl/Python/PHP), are not suitable for proper and professional software engineering [10]. In other words, the proponents of traditional compiled languages such as Java and C++ claimed that software projects based on scripting languages lack the architectural properties that allow systematic, effortless and viable maintenance. Such attacks to the scripting languages are less frequently documented in scientific papers, although the academic community usually tends to reject the change in programming practices brought about by scripting [10].
+<b>Link:</b><a href="http://conferences.computer.org/icsme/2014/papers/6146a381.pdf">http://conferences.computer.org/icsme/2014/papers/6146a381.pdf</a>
+
+	  </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          3.	Stéphane Magnenat, Philippe Rétornaz, Michael Bonani, Valentin Longchamp and Francesco Mondada, "ASEBA: A Modular Architecture for Event-Based Control of Complex Robots",Mechatronics IEEE/ASME Transactions on, vol. 16, pp. 321-329, 2011, ISSN 1083-4435.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <b>AUTHORS:</b> Stéphane Magnenat, Philippe Rétornaz, Michael Bonani, Valentin Longchamp, Valentin Longchamp <br>
+<b>Foreign Country:</b> CH-Switzerland <br>
+<b>What they say about the paper: </b>Our results show that a safe, event-based scripting language is a sound approach to the programming of real-time embedded systems. This fact provides insight into the question of scripting from a computer science point of view [31].
+<br><b>Link:</b> <a href="http://ieeexplore.ieee.org/document/5430868/">http://ieeexplore.ieee.org/document/5430868/</a>
+</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          4.	Michael Weeks, "The Calq system for signal processing applications", Communications and Information Technologies (ISCIT) 2010 International Symposium on, pp. 121-126, 2010.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <b>AUTHORS:</b> Michael Weeks <br>
+<b>Foreign Country:</b> US-United States <br>
+<b>What they say about the paper:</b> When Calq, running under Google Chrome. In the top text box, we see the following commands. for a = 4:7 disp(a) end The user types these into the text box, effectively creating a script [4].
+<br><b>Link:</b> <a href="http://ieeexplore.ieee.org/document/5664901/">http://ieeexplore.ieee.org/document/5664901/</a>
+ </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          5.	R. Rajini, A. Tiwary and R. Ganapathy, "A Blended Training Model to Improve Learning Outcome of IT Professionals in Scripting Languages", Technology for Education (T4E) 2011 IEEE International Conference on, pp. 285-288, 2011.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <b>AUTHORS:</b> R. Rajini, A. Tiwary, R. Ganapathy <br>
+<b>Foreign Country:</b> IN-India <br>
+<b>What they say about the paper: </b> For ADM, there are several languages in use including Perl, Python, PHP, Rexx, shell script, Java Script, TCL, etc. [6]
+<br><b>Link:</b> <a href="http://ieeexplore.ieee.org/document/6004402/">http://ieeexplore.ieee.org/document/6004402/</a>
+ </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        6.  David J. Pearce and James Noble, "Implementing a Language with Flow-Sensitive and Structural Typing on the JVM", Electronic Notes in Theoretical Computer Science, vol. 279, pp. 47, 2011, ISSN 15710661.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+     <b> AUTHORS: </b>David J. Pearce , James Noble 
+<br><b>Foreign Country: </b>NZ- New Zealand
+<br><b>What they say about the paper:</b> Static typing forces some discipline on the programming process. For example, it ensures at least some documentation regarding acceptable function inputs is provided. In contrast, dynamically typed languages are more flexible which helps reduce overheads and increase productivity [37,47,34,7].
+<br><b>Link:</b> <a href="http://www.sciencedirect.com/science/article/pii/S157106611100154X">http://www.sciencedirect.com/science/article/pii/S157106611100154X</a>
+</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          7.	(BOOK)  Juhana Harmanen and Tommi Mikkonen, “On Polyglot programming in the Web” Modern Software Engineering Methodologies for Mobile and Cloud Environments, pp. 102, 2016, ISBN 9781466699168.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <b>AUTHORS:</b> Juhana Harmanen, Tommi Mikkonen
+<br><b>Foreign Country:</b> FI-Finland
+<br><b>Link:</b><a href="https://books.google.com/books?hl=en&lr=&id=vVpwCwAAQBAJ&oi=fnd&pg=PA102&dq=Juhana+Harmanen+and+Tommi+Mikkonen&ots=QLMIaIbyH2&sig=OUd4jexePqK-C1YUp1XHbbE5t1c#v=onepage&q=Juhana%20Harmanen%20and%20Tommi%20Mikkonen&f=false">https://books.google.com/books?hl=en&lr=&id=vVpwCwAAQBAJ&oi=fnd&pg=PA102&dq=Juhana+Harmanen+and+Tommi+Mikkonen&ots=QLMIaIbyH2&sig=OUd4jexePqK-C1YUp1XHbbE5t1c#v=onepage&q=Juhana%20Harmanen%20and%20Tommi%20Mikkonen&f=false</a>
+ </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+         8.	Mahdi Belcaid and Robert J. Toonen, "Demystifying computer science for molecular ecologists",Molecular Ecology, vol. 24, pp. 2619, 2015, ISSN 09621083.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <b>AUTHORS:</b> Mahdi Belcaid , Robert J. Toonen
+<br><b>Foreign Country: </b> US- United States
+<br><b>What they say about the paper: </b> With compiled languages, the programmers are required to handle system-specific details, such as memory management or disc access. In contrast, scripting languages are less concerned with the efficiency and do not typically allow programmers fine control over the hardware. That is to say that compiled languages deliver performance at the cost of additional complexity and a steeper learning curve (Loui 2008).
+<br><b>Link:</b><a href="http://onlinelibrary.wiley.com/doi/10.1111/mec.13175/full">http://onlinelibrary.wiley.com/doi/10.1111/mec.13175/full</a>
+ </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          9. Anton A. Goloborodko, Lev I. Levitsky, Mark V. Ivanov and Mikhail V. Gorshkov, "Pyteomics—a Python Framework for Exploratory Data Analysis and Rapid Software Prototyping in Proteomics",Journal of The American Society for Mass Spectrometry, vol. 24, pp. 301, 2013, ISSN 1044-0305.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      <b>AUTHORS:</b> Anton A. Goloborodko , Lev I. Levitsky, Mark V. Ivanov ,Mikhail V. Gorshkov
+<br><b>Foreign Country:</b> US: United States and RU-Russia
+<br><b>What they say about the paper: </b>The scripting languages represent another alternative. Their unique flexibility and ease of development make them highly attractive for development of scientific applications [4, 5].
+<br><b>Link:</b><a href="http://link.springer.com/article/10.1007/s13361-012-0516-6">http://link.springer.com/article/10.1007/s13361-012-0516-6</a>
+ </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTen">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          10.	Laurence Tratt, Advances in Computers, vol. 77, pp. 149, 2009, ISSN 00652458, ISBN 9780123748126.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+      <b>AUTHORS: </b>Laurence Tratt
+<br><b>Foreign Country:</b> UK- United Kingdom
+<br><b>What they say about the paper: </b>In reality the absence or presence of static typing has a number of effects on the use and applicability of a language that simple comparisons ignore [Pau07]. So while some tasks such as low-level systems (e.g. operating systems), resource critical systems (e.g. databases), or safety critical systems (e.g. systems for nuclear reactors) benefit from the extra rigour of statically typed 1 languages, for many other systems the associated costs outweigh the benefits [Lou08].
+<br><b>Link:</b><a href="http://eprints.bournemouth.ac.uk/10668/1/tratt__dynamically_typed_languages.pdf">http://eprints.bournemouth.ac.uk/10668/1/tratt__dynamically_typed_languages.pdf</a>
+ </div>
+  </div>
+</div>
+	
+	<div>
+	<hr>
+	
+<center>
+ <div id="authors"><a href="authors"></a>
+ <center>
+	<h2>List of Authors and Countries.</h2>
+	</center>
+ <table>
+  <tr>
+    <th>Authors</th>
+    <th>Count</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>David De Roure</td>
+    <td>1</td>
+    <td>UK-United Kingdom</td>
+  </tr>
+  <tr>
+    <td>Panos Kyriakakis</td>
+    <td>1</td>
+    <td>GR-Greece</td>
+  </tr>
+  <tr>
+    <td>Alexander Chatzigeorgiou</td>
+    <td>2</td>
+    <td>GR-Greece</td>
+  </tr>
+  <tr>
+    <td>Stéphane Magnenat</td>
+    <td>1</td>
+    <td>CH-Switzerland </td>
+  </tr>
+  <tr>
+    <td>Philippe Rétornaz</td>
+    <td>1</td>
+    <td>CH-Switzerland </td>
+  </tr>
+  <tr>
+    <td>Michael Bonani</td>
+    <td>1</td>
+    <td>CH-Switzerland </td>
+  </tr>
+    <tr>
+    <td>Valentin Longchamp</td>
+    <td>1</td>
+    <td>CH-Switzerland </td>
+  </tr>
+    <tr>
+    <td>Michael Weeks</td>
+    <td>1</td>
+    <td>US-United States</td>
+  </tr> 
+  <tr>
+    <td>R. Rajini</td>
+    <td>1</td>
+    <td>IN-India</td>
+  </tr>  
+  <tr>
+    <td>A. Tiwary</td>
+    <td>1</td>
+    <td>IN-India</td>
+  </tr>
+  <tr>
+    <td>R. Ganapathy</td>
+    <td>1</td>
+    <td>IN-India</td>
+  </tr>
+  <tr>
+    <td>David J. Pearce</td>
+    <td>1</td>
+    <td>NZ-New Zealand</td>
+  </tr>
+  <tr>
+    <td>James Noble</td>
+    <td>1</td>
+    <td>NZ- New Zealand</td>
+  </tr>
+  <tr>
+    <td>Juhana Harmanen</td>
+    <td>1</td>
+    <td>FI-Finland</td>
+  </tr>
+  <tr>
+    <td>Tommi Mikkonen</td>
+    <td>1</td>
+    <td>FI-Finland</td>
+  </tr>
+  <tr>
+    <td>Mahdi Belcaid</td>
+    <td>1</td>
+    <td>US-United States</td>
+  </tr>
+  <tr>
+    <td>Robert J. Toonen</td>
+    <td>1</td>
+    <td>US-United States</td>
+  </tr>
+  <tr>
+    <td>Anton A. Goloborodko</td>
+    <td>1</td>
+    <td>RU-Russia</td>
+  </tr>
+  <tr>
+    <td>Lev I. Levitsky</td>
+    <td>1</td>
+    <td>RU-Russia</td>
+  </tr>
+  <tr>
+    <td>Mark V. Ivanov</td>
+    <td>1</td>
+    <td>RU-Russia</td>
+  </tr>
+  <tr>
+    <td>Laurence Tratt</td>
+    <td>1</td>
+    <td>UK-United Kingdom</td>
+  </tr>
+  
+</table>
+</div>
+ </center>
+
+  <hr>
+  
+  
+    </div>
+ </div>
+<div id="video"><a href="video"></a>
+ <center>
+ <h2>Video</h2>
+ <iframe width="520" height="345" src="https://youtube.com/embed/DeNLFS2Q5R8"> </iframe>
+ </center>
+ </div>
+ </div>
+
+	
+    
+	
+    <div class="col-sm-2 sidenav">
+    <img class="img-responsive" src="img.jpg" alt="Processor and Architecture" width="410" height="300">
+      <h3>Computer Journal</h3>
+      
+    </div>
+  </div>
+  </div>
+
+<footer class="container-fluid text-center">
+  <p>Sneha Katkade - skatk3 | Aditya Chimbalkar - achim2 | Manish Dunung - mdunu2</p> 
+  <p>University of Illinois at Springfield</p>
+</footer>
+
+</body>
+</html>
+
